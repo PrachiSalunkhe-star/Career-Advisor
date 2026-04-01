@@ -55,8 +55,8 @@ function getUserId(req) {
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "eduguide_72747576",
-  database: "eduguide"
+  password: "enter password ",
+  database: "database name"
 });
 
 db.connect(err => {
