@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Assessment | EduGuide</title>
+  <link rel="icon" href="data:,">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/collages.css">
+  <link rel="stylesheet" href="./css/assesment.css">
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">🎓EduGuide</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="assesment.html">Assessment</a>
+    <a href="collages.html">Colleges</a>
+    <a href="explore.html">Explore</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+  <div id="authArea">
+  <a href="login.html" id="loginBtn">Login</a>
+  <button id="logoutBtn" style="display:none;">Logout</button>
+</div>
+  
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="assessment-container">
+
+  <h1>Career Aptitude Assessment</h1>
+  <p>Let's start by understanding your educational background</p>
+
+  <div id="levelSelection" class="card-grid">
+    <div class="level-card" onclick="startAssessment('10th')">10th Standard</div>
+    <div class="level-card" onclick="startAssessment('12th')">12th Standard</div>
+    <div class="level-card" onclick="startAssessment('Diploma')">Diploma</div>
+    <div class="level-card" onclick="startAssessment('Graduation')">After Graduation</div>
+  </div>
+
+  <section class="assessment-highlights">
+    <h2>How the assessment boosts your future</h2>
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <h3>Fast Insights</h3>
+        <p>Answer 12 tailored questions and discover your strongest career stream in minutes.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Real Career Match</h3>
+        <p>Guided by your answers, we recommend careers and study paths aligned with your interest.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>College Path</h3>
+        <p>After results, explore related colleges and top courses automatically.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="questionBox" class="card hidden"></div>
+  
+
+<div id="recommendationSection" class="card hidden"></div>
+</main>
+
+<!-- JS (Order is Important) -->
+
+<script src="js/logout.js"></script>
+<script src="js/assesment.js"></script>
+
+<!-- ================= CHATBOT ================= -->
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/02/16/07/20260216073805-37KXVKXN.js" defer></script>
+<script src="js/auth-ui.js"></script>
+
+</body>
+</html>

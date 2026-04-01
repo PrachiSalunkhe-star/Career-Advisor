@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EduGuide – Career Advisor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">🎓EduGuide</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="assesment.html">Assessment</a>
+    <a href="collages.html">Colleges</a>
+    <a href="explore.html">Explore</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+<div id="authArea">
+  <a href="login.html" id="loginBtn">Login</a>
+  <button id="logoutBtn" style="display:none;">Logout</button>
+</div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+  <h1>One-Stop Personalized Career & Education Advisor</h1>
+  <p>
+    Discover your perfect career path with AI-powered guidance,
+    college information and personalized recommendations.
+  </p>
+
+  <div class="hero-buttons">
+    <button class="primary-btn" onclick="window.location.href='assesment.html'">
+      Take Assessment
+    </button>
+    <button class="secondary-btn" onclick="window.location.href='explore.html'">
+      Explore Paths
+    </button>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+  <div class="feature-card">
+    <i class="ri-brain-line"></i>
+    <h3>Smart Assessment</h3>
+    <p>AI-powered aptitude tests to discover your strengths.</p>
+    <a href="assesment.html">Take Test →</a>
+  </div>
+
+  <div class="feature-card">
+    <i class="ri-school-line"></i>
+    <h3>College Directory</h3>
+    <p>Comprehensive database of colleges with details.</p>
+    <a href="collages.html">Browse Colleges →</a>
+  </div>
+
+  <div class="feature-card">
+    <i class="ri-road-map-line"></i>
+    <h3>Career Paths</h3>
+    <p>Explore career options based on your interests.</p>
+    <a href="explore.html">Explore Path →</a>
+  </div>
+
+  <div class="feature-card">
+    <i class="ri-user-3-line"></i>
+    <h3>Personal Profile</h3>
+    <p>Track progress and manage preferences.</p>
+    <a href="profile.html">View Profile →</a>
+  </div>
+</section>
+
+<!-- ================= STREAMS ================= -->
+<section class="streams">
+  <h2>Choose Your Academic Stream</h2>
+
+  <div class="stream-cards">
+    <div class="stream science">
+      <h3>Science Stream</h3>
+      <ul>
+        <li>Engineering & Technology</li>
+        <li>Medical & Healthcare</li>
+        <li>Research & Development</li>
+      </ul>
+    </div>
+
+    <div class="stream commerce">
+      <h3>Commerce Stream</h3>
+      <ul>
+        <li>Business & Management</li>
+        <li>Finance & Banking</li>
+        <li>Entrepreneurship</li>
+      </ul>
+    </div>
+
+    <div class="stream arts">
+      <h3>Arts Stream</h3>
+      <ul>
+        <li>Literature & Languages</li>
+        <li>Social Sciences</li>
+        <li>Creative Arts</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHATBOT ================= -->
+
+<!-- Auth Check -->
+
+<script src="js/logout.js"></script>
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/02/16/07/20260216073805-37KXVKXN.js" defer></script>
+
+<script src="js/auth-ui.js"></script>
+</body>
+</html>
+
+

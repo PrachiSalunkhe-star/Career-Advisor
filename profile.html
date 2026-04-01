@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile | EduGuide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">🎓EduGuide</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="assesment.html">Assessment</a>
+    <a href="collages.html">Colleges</a>
+    <a href="explore.html">Explore</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <div id="authArea">
+    <a href="login.html" id="loginBtn">Login</a>
+    <button id="logoutBtn" style="display:none;">Logout</button>
+  </div>
+</header>
+
+
+<!-- ================= PROFILE SECTION ================= -->
+<div class="container">
+
+  <h1>My Profile</h1>
+  <p>Manage your personal information and preferences</p>
+
+  <div class="profile-grid">
+
+    <!-- ================= LEFT CARD ================= -->
+    <div class="card profile-avatar">
+      <div class="avatar-circle" id="avatarCircle">👤</div>
+
+      <div class="avatar-actions">
+        <button id="uploadAvatarBtn" type="button">Upload Photo</button>
+        <button id="captureAvatarBtn" type="button">Take Photo</button>
+      </div>
+
+      <input type="file" id="avatarFileInput" accept="image/*" style="display:none;" />
+
+      <h3 id="userName">Loading...</h3>
+      <p id="userEducation">Education: -</p>
+      <p id="userCity">City: -</p>
+    </div>
+
+
+    <!-- ================= RIGHT CARD ================= -->
+    <div class="card">
+      <h2>Personal Information</h2>
+
+      <div class="info-grid">
+
+        <div class="info-item">
+          <label>Email</label>
+          <p id="userEmail">Loading...</p>
+        </div>
+
+        <div class="info-item">
+          <label>Recommended Stream</label>
+          <p id="streamName">Not available</p>
+        </div>
+
+      </div>
+
+      <h3>Profile Details</h3>
+      <form id="profileForm" class="profile-form">
+        <div class="form-group">
+          <label for="phoneInput">Phone</label>
+          <input type="text" id="phoneInput" name="phone" placeholder="Enter phone" />
+        </div>
+        <div class="form-group">
+          <label for="cityInput">City</label>
+          <input type="text" id="cityInput" name="city" placeholder="Enter city" />
+        </div>
+        <button type="submit" id="saveProfileBtn">Save Profile</button>
+        <p id="profileMessage" style="margin-top:12px;"></p>
+      </form>
+    </div>
+
+  </div>
+
+
+  <!-- ================= LATEST ASSESSMENT ================= -->
+  <div class="card" style="margin-top:30px;">
+    <h2>Latest Assessment Result</h2>
+
+    <p>
+      Score: <span id="streamScore">0%</span>
+    </p>
+
+    <div class="progress-bar">
+      <div id="progressFill"
+           class="progress-fill"
+           style="width:0%; background:#3498db;">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================= FAVORITE CAREERS ================= -->
+  <div class="card" style="margin-top:30px;">
+    <h2>Favorite Careers</h2>
+
+    <div id="favoritesContainer">
+      <p>Loading career favorites...</p>
+    </div>
+  </div>
+
+  <!-- ================= FAVORITE COLLEGES ================= -->
+  <div class="card" style="margin-top:30px;">
+    <h2>Favorite Colleges</h2>
+
+    <div id="favoriteCollegesContainer">
+      <p>Loading college favorites...</p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ================= PROFILE SCRIPT ================= -->
+<script src="js/profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="login-container">
+      <h2>Login</h2>
+
+      <!-- ✅ FORM STARTS HERE -->
+      <form onsubmit="login(event)">
+
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <button type="submit">Login</button>
+
+      </form>
+      <!-- ✅ FORM ENDS HERE -->
+
+      <!-- ✅ ADD THIS MESSAGE BOX -->
+      <p id="message" style="margin-top:10px; font-weight:bold;"></p>
+
+      <p class="signup-text">
+        Don’t have an account?
+        <a href="signup.html">Sign Up</a>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- ✅ Keep JS at bottom -->
+  <script src="js/login.js"></script>
+
+</body>
+</html>

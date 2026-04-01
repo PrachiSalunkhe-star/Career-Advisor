@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Careers | EduGuide</title>
+  <link rel="stylesheet" href="./css/explore.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">🎓EduGuide</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="assesment.html">Assessment</a>
+    <a href="collages.html">Colleges</a>
+    <a href="explore.html">Explore</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+ <div id="authArea">
+  <a href="login.html" id="loginBtn">Login</a>
+  <button id="logoutBtn" style="display:none;">Logout</button>
+</div>
+</header>
+<h2 class="title">Detailed Career Information</h2>
+
+<!-- ===== CAREER GRID ===== -->
+<div class="career-container" id="careerContainer"></div>
+
+
+<!-- ===== MODAL ===== -->
+<div class="modal" id="careerModal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal()">×</span>
+
+    <h2 id="modalTitle"></h2>
+
+    <div class="modal-body">
+
+      <img id="modalImage">
+
+      <div class="modal-info">
+
+        <h3>Required Courses</h3>
+        <ul id="modalCourses"></ul>
+
+        <h3>Key Skills</h3>
+        <div id="modalSkills" class="skills"></div>
+
+        <h3>Industries</h3>
+        <ul id="modalIndustries"></ul>
+
+      </div>
+    </div>
+
+    <div class="modal-buttons">
+      <button onclick="goToColleges()" class="primary">
+  Find  Colleges
+</button>
+       <button id="aptitudeBtn" class="secondary"> Take Aptitude Test</button>
+    </div>
+
+  </div>
+</div>
+<script src="js/auth-ui.js"></script>
+<script src="./js/explore.js"></script>
+<!-- ================= CHATBOT ================= -->
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/02/16/07/20260216073805-37KXVKXN.js" defer></script>
+</body>
+</html>

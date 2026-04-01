@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assessment Result | EduGuide</title>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="css/assessment-result.css">
+</head>
+
+<body>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">🎓EduGuide</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="assesment.html">Assessment</a>
+    <a href="collages.html">Colleges</a>
+    <a href="explore.html">Explore</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+<div id="authArea">
+  <a href="login.html" id="loginBtn">Login</a>
+  <button id="logoutBtn" style="display:none;">Logout</button>
+</div>
+</header>
+
+<div class="container">
+
+  <h1>Your Assessment Results</h1>
+  <p class="subtitle">
+    Based on your responses, here are your personalized recommendations
+  </p>
+
+  <div class="result-grid">
+
+    <!-- LEFT SIDE -->
+    <div class="card">
+      <h2>Recommended Stream</h2>
+
+      <div class="stream-box">
+        <h3 id="streamName">Loading...</h3>
+        <p>This stream aligns best with your interests and aptitude.</p>
+      </div>
+
+      <h4>Potential Courses:</h4>
+      <ul id="courseList"></ul>
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="card">
+
+  <!-- ✅ NEW container -->
+  <h3>Suggested Opportunities</h3>
+  <div id="opportunitiesContainer"></div>
+
+  <!-- ✅ careers container -->
+  <h3>Recommended Careers</h3>
+  <div id="careerContainer">
+    Loading careers...
+  </div>
+
+  <button id="findCollegeBtn" class="primary-btn">
+    Find Colleges for These Courses
+  </button>
+
+  <button onclick="goExplore()" class="secondary-btn">
+    Explore Career Paths
+  </button>
+</div>
+
+  </div>
+
+</div>
+
+<script src="js/assessment-result.js"></script>
+<!-- ================= CHATBOT ================= -->
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/02/16/07/20260216073805-37KXVKXN.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+
+  <!-- ✅ Correct CSS link -->
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="signup-container">
+      <h2>Create Account</h2>
+
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+
+      <button onclick="signup()">Sign Up</button>
+
+      <p class="login-text">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- ✅ module REQUIRED -->
+  <script type="module" src="js/signup.js"></script>
+</body>
+</html>

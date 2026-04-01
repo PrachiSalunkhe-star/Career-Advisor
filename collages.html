@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colleges | EduGuide</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/collages.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">🎓 EduGuide</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="assesment.html">Assessment</a>
+    <a href="collages.html" class="active">Colleges</a>
+    <a href="explore.html">Explore</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+<div id="authArea">
+  <a href="login.html" id="loginBtn">Login</a>
+  <button id="logoutBtn" style="display:none;">Logout</button>
+</div>
+</header>
+
+<!-- MAIN CONTENT -->
+<section class="container">
+  <h1>Colleges Directory</h1>
+  <p>Find the best colleges near you</p>
+
+  <div class="filters">
+    <input type="text" id="searchInput" placeholder="Search college...">
+
+    <select id="cityFilter">
+      <option value="">All Cities</option>
+    </select>
+
+    <select id="typeFilter">
+      <option value="">All Types</option>
+      <option value="Central">Central</option>
+      <option value="State">State</option>
+    </select>
+
+    <button id="resetFilters">Reset</button>
+  </div>
+
+  <div id="collegesGrid" class="grid"></div>
+</section>
+
+<!-- JS (Correct Order) -->
+
+<script src="js/logout.js"></script>
+<script src="js/collages.js"></script>
+<!-- ================= CHATBOT ================= -->
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/02/16/07/20260216073805-37KXVKXN.js" defer></script>
+<script src="js/auth-ui.js"></script>
+</body>
+</html>
