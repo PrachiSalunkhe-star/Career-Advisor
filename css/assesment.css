@@ -1,0 +1,174 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.profile-btn {
+  background: #1aa89c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+/* HEADER */
+
+.assessment-container  {
+  padding: 40px;
+  text-align: center;
+ 
+}
+
+.assessment-container h1 {
+ text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+ 
+}
+
+.assessment-container p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+ 
+}
+
+.card-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* New section for teaching-oriented assessment UX */
+.assessment-highlights {
+  margin: 24px auto 32px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.assessment-highlights h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #1a5f56;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.highlight-card {
+  background: #f0f9f7;
+  border: 1px solid #bce8df;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.highlight-card h3 {
+  color: #0f5a4f;
+  margin-bottom: 8px;
+}
+
+.highlight-card p {
+  color: #3f5a58;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.level-card {
+  background: #a8d8d1;
+  padding: 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 200px;
+  font-weight: bold;
+}
+
+.level-card:hover {
+  background: #009688;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.options button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #00796b;
+  border-radius: 8px;
+  background: #e0f2f1;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.options button:hover {
+  background: #b2dfdb;
+}
+
+.question-extra {
+  margin-top: 18px;
+  text-align: left;
+  background: #fff8e1;
+  border-left: 4px solid #ffc107;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.question-extra h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: #795548;
+}
+
+.question-extra p {
+  margin: 0;
+  color: #4e342e;
+}
+
+.question-extra .small {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6d4c41;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-username {
+  font-weight: 600;
+  color: #333;
+}
+
+.logout-btn {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: none; /* hidden by default */
+}
+
+.logout-btn:hover {
+  background: #c53030;
+}
